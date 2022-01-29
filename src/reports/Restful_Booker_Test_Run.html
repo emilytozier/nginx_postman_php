@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Postman - Reports</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+        //custom script
+        $(function(){
+            $('.panel').filter(function(){ return $('.tego-bg-red', this).length})
+                    .find('.panel-heading')
+                    .removeClass('tego-bg-green')
+                    .addClass('tego-bg-red')
+        })
+  </script>
+    <style>
+        .tego-bg-red .panel-title, .tego-bg-green .panel-title {
+            color: #fff;
+        }
+        .tego-bg-red {
+            background-color: #e74c3c !important;
+        }
+        .tego-bg-green {
+            background-color: #27ae60 !important;
+        }
+        .tego-color-red {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .tego-color-green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+    <div class="row">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Test Run Information</div>
+        <div class="panel-body">
+            <div class="col-md-3">Collection</div><div class="col-md-9">Restful_Booker_Collection</div>
+            <div class="col-md-3">Environment</div><div class="col-md-9">Restful_Booker_Environment</div>
+            <div class="col-md-3">Time of Run</div><div class="col-md-9">Sat Jan 29 2022 15:27:07 GMT+0000 (Coordinated Universal Time)</div>
+        </div>
+      </div>
+ 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Test Run Summary</div>
+        <div class="panel-body">
+                <div class="col-md-4">Iterations</div><div class="col-md-4">1</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Requests</div><div class="col-md-4">17</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Prerequest Scripts</div><div class="col-md-4">36</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Test Scripts</div><div class="col-md-4">45</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Assertions</div><div class="col-md-4">14</div><div class="col-md-4">0</div>
+
+                <div class="col-md-12">&nbsp;</div>
+                <div class="col-md-6">Total run duration</div><div class="col-md-2">5s</div>
+                <div class="col-md-6">Total data received</div><div class="col-md-2">4.79KB (approx)</div>
+                <div class="col-md-6">Average response time</div><div class="col-md-2">224ms</div>
+
+                <div class="col-md-12">&nbsp;</div>
+                <div class="col-md-3"><strong>Total Failures</strong></div><div class="col-md-2 "><strong>0</strong></div>
+                
+        </div>
+    </div>
+    </div>
+
+    <br/><strong><h2>Requests</h2></strong>
+
+        <div class="panel-group" id="collapse-folder-363fb05e-c4eb-44d9-a574-2f2e9aae84dc" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-363fb05e-c4eb-44d9-a574-2f2e9aae84dc">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-363fb05e-c4eb-44d9-a574-2f2e9aae84dc" aria-controls="collapseOne"><strong>Health Check</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-363fb05e-c4eb-44d9-a574-2f2e9aae84dc" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-363fb05e-c4eb-44d9-a574-2f2e9aae84dc">
+                    <div class="panel-group" id="collapse-request-fc58fc03-88f9-48a2-8113-1b6c1f7e723e" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-fc58fc03-88f9-48a2-8113-1b6c1f7e723e">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-fc58fc03-88f9-48a2-8113-1b6c1f7e723e" aria-controls="collapseOne">Ping the API</a></h4>
+                            </div>
+            
+                            <div id="requestData-fc58fc03-88f9-48a2-8113-1b6c1f7e723e" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-fc58fc03-88f9-48a2-8113-1b6c1f7e723e">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/ping" target="_blank">https://restful-booker.herokuapp.com/ping</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">854ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">7B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">2</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">201</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">Created</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 201</td><td  class="tego-bg-green">1</td><td >0</td></tr><tr><td>Content-Type header is correct</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="panel-group" id="collapse-folder-95d003b7-e829-44ff-8462-b8140ed62719" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-95d003b7-e829-44ff-8462-b8140ed62719">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-95d003b7-e829-44ff-8462-b8140ed62719" aria-controls="collapseOne"><strong>Get all Bookings</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-95d003b7-e829-44ff-8462-b8140ed62719" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-95d003b7-e829-44ff-8462-b8140ed62719">
+                    <div class="panel-group" id="collapse-request-c85856f7-4a5f-4e82-a21e-726061450ade" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-c85856f7-4a5f-4e82-a21e-726061450ade">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-c85856f7-4a5f-4e82-a21e-726061450ade" aria-controls="collapseOne">Get all bookings</a></h4>
+                            </div>
+            
+                            <div id="requestData-c85856f7-4a5f-4e82-a21e-726061450ade" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-c85856f7-4a5f-4e82-a21e-726061450ade">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">167ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">349B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:21},{&quot;bookingid&quot;:17},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:19},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:18},{&quot;bookingid&quot;:14},{&quot;bookingid&quot;:5}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-600cb14d-ac13-4e5d-a98e-578650e8626e" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-600cb14d-ac13-4e5d-a98e-578650e8626e">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-600cb14d-ac13-4e5d-a98e-578650e8626e" aria-controls="collapseOne">Get all bookings with all parameters</a></h4>
+                            </div>
+            
+                            <div id="requestData-600cb14d-ac13-4e5d-a98e-578650e8626e" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-600cb14d-ac13-4e5d-a98e-578650e8626e">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking?firstname&#x3D;sally&amp;lastname&#x3D;brown&amp;checkin&#x3D;2017-11-11&amp;checkout&#x3D;2017-11-15" target="_blank">https://restful-booker.herokuapp.com/booking?firstname&#x3D;sally&amp;lastname&#x3D;brown&amp;checkin&#x3D;2017-11-11&amp;checkout&#x3D;2017-11-15</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">175ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">2B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-7dc161ad-3d3b-460d-b298-abd90685690f" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-7dc161ad-3d3b-460d-b298-abd90685690f">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-7dc161ad-3d3b-460d-b298-abd90685690f" aria-controls="collapseOne">Get all bookings with the firstname and last name parameter</a></h4>
+                            </div>
+            
+                            <div id="requestData-7dc161ad-3d3b-460d-b298-abd90685690f" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-7dc161ad-3d3b-460d-b298-abd90685690f">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking?firstname&#x3D;sally&amp;lastname&#x3D;brown" target="_blank">https://restful-booker.herokuapp.com/booking?firstname&#x3D;sally&amp;lastname&#x3D;brown</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">169ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">2B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-81d14c2b-a415-42e8-bf8d-2d7b52bd0295" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-81d14c2b-a415-42e8-bf8d-2d7b52bd0295">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-81d14c2b-a415-42e8-bf8d-2d7b52bd0295" aria-controls="collapseOne">Get all bookings with the firstname  parameter</a></h4>
+                            </div>
+            
+                            <div id="requestData-81d14c2b-a415-42e8-bf8d-2d7b52bd0295" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-81d14c2b-a415-42e8-bf8d-2d7b52bd0295">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking?firstname&#x3D;sally" target="_blank">https://restful-booker.herokuapp.com/booking?firstname&#x3D;sally</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">162ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">2B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-d4944242-17f9-49f6-ab27-3e0a197b505e" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-d4944242-17f9-49f6-ab27-3e0a197b505e">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-d4944242-17f9-49f6-ab27-3e0a197b505e" aria-controls="collapseOne">Get all bookings with the lastname parameter</a></h4>
+                            </div>
+            
+                            <div id="requestData-d4944242-17f9-49f6-ab27-3e0a197b505e" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-d4944242-17f9-49f6-ab27-3e0a197b505e">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking?lastname&#x3D;brown" target="_blank">https://restful-booker.herokuapp.com/booking?lastname&#x3D;brown</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">200ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">2B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-5d1b6be7-d35b-4676-816d-599fd873b8e6" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-5d1b6be7-d35b-4676-816d-599fd873b8e6">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-5d1b6be7-d35b-4676-816d-599fd873b8e6" aria-controls="collapseOne">Get all bookings with the checkin parameter</a></h4>
+                            </div>
+            
+                            <div id="requestData-5d1b6be7-d35b-4676-816d-599fd873b8e6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-5d1b6be7-d35b-4676-816d-599fd873b8e6">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking?checkin&#x3D;2017-11-11" target="_blank">https://restful-booker.herokuapp.com/booking?checkin&#x3D;2017-11-11</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">164ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">231B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:21},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:18},{&quot;bookingid&quot;:14}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-5d974e41-ed03-4ec7-ad3f-0fbcfa368413" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-5d974e41-ed03-4ec7-ad3f-0fbcfa368413">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-5d974e41-ed03-4ec7-ad3f-0fbcfa368413" aria-controls="collapseOne">Get all bookings with the checkout parameter</a></h4>
+                            </div>
+            
+                            <div id="requestData-5d974e41-ed03-4ec7-ad3f-0fbcfa368413" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-5d974e41-ed03-4ec7-ad3f-0fbcfa368413">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking?checkout&#x3D;2017-11-11" target="_blank">https://restful-booker.herokuapp.com/booking?checkout&#x3D;2017-11-11</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">168ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">103B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">[{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:17},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:19}]</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="panel-group" id="collapse-folder-50712c6f-8a71-406b-aed3-21ce67f8c674" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-50712c6f-8a71-406b-aed3-21ce67f8c674">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-50712c6f-8a71-406b-aed3-21ce67f8c674" aria-controls="collapseOne"><strong>Get a single booking</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-50712c6f-8a71-406b-aed3-21ce67f8c674" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-50712c6f-8a71-406b-aed3-21ce67f8c674">
+                    <div class="panel-group" id="collapse-request-af456ea9-181d-4bbb-b4bd-fbba05ef7199" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-af456ea9-181d-4bbb-b4bd-fbba05ef7199">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-af456ea9-181d-4bbb-b4bd-fbba05ef7199" aria-controls="collapseOne">Get a single booking</a></h4>
+                            </div>
+            
+                            <div id="requestData-af456ea9-181d-4bbb-b4bd-fbba05ef7199" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-af456ea9-181d-4bbb-b4bd-fbba05ef7199">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking/1" target="_blank">https://restful-booker.herokuapp.com/booking/1</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">168ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">139B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;firstname&quot;:&quot;Mark&quot;,&quot;lastname&quot;:&quot;Brown&quot;,&quot;totalprice&quot;:157,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2021-05-01&quot;,&quot;checkout&quot;:&quot;2021-10-07&quot;}}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Content-Type header is correct</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-2bfeaf87-825f-422d-9021-89513ff5498e" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-2bfeaf87-825f-422d-9021-89513ff5498e">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-2bfeaf87-825f-422d-9021-89513ff5498e" aria-controls="collapseOne">Get a single booking with XML header set</a></h4>
+                            </div>
+            
+                            <div id="requestData-2bfeaf87-825f-422d-9021-89513ff5498e" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-2bfeaf87-825f-422d-9021-89513ff5498e">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking/1" target="_blank">https://restful-booker.herokuapp.com/booking/1</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">168ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">291B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">0</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">&lt;?xml version&#x3D;&#x27;1.0&#x27;?&gt;
+            &lt;booking&gt;
+                &lt;firstname&gt;Mark&lt;/firstname&gt;
+                &lt;lastname&gt;Brown&lt;/lastname&gt;
+                &lt;totalprice&gt;157&lt;/totalprice&gt;
+                &lt;depositpaid&gt;true&lt;/depositpaid&gt;
+                &lt;bookingdates&gt;
+                    &lt;checkin&gt;2021-05-01&lt;/checkin&gt;
+                    &lt;checkout&gt;2021-10-07&lt;/checkout&gt;
+                &lt;/bookingdates&gt;
+            &lt;/booking&gt;</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-0ce74f6b-eb75-42d0-bb24-cda3780d1651" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-0ce74f6b-eb75-42d0-bb24-cda3780d1651">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-0ce74f6b-eb75-42d0-bb24-cda3780d1651" aria-controls="collapseOne">Get a single booking dynamically</a></h4>
+                            </div>
+            
+                            <div id="requestData-0ce74f6b-eb75-42d0-bb24-cda3780d1651" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-0ce74f6b-eb75-42d0-bb24-cda3780d1651">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking/9" target="_blank">https://restful-booker.herokuapp.com/booking/9</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">173ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">170B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">0</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;firstname&quot;:&quot;Susan&quot;,&quot;lastname&quot;:&quot;Jones&quot;,&quot;totalprice&quot;:943,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-04-30&quot;,&quot;checkout&quot;:&quot;2018-09-25&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="panel-group" id="collapse-folder-20679e8f-f480-4511-abfa-643bb98f7405" role="tablist" aria-multiselectable="true">
+            <div role="tab" id="folderHead-20679e8f-f480-4511-abfa-643bb98f7405">
+                <h4 style="font-size: 18px;" class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#folderData-20679e8f-f480-4511-abfa-643bb98f7405" aria-controls="collapseOne"><strong>Create a new booking</strong></a></h4>
+            </div>
+            <br/>
+            <div id="folderData-20679e8f-f480-4511-abfa-643bb98f7405" class="panel-collapse collapsed" role="tabpanel" aria-labelledby="folderHead-20679e8f-f480-4511-abfa-643bb98f7405">
+                    <div class="panel-group" id="collapse-request-2df9a0f7-4923-42d5-968c-64666f40557a" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-2df9a0f7-4923-42d5-968c-64666f40557a">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-2df9a0f7-4923-42d5-968c-64666f40557a" aria-controls="collapseOne">Create a new booking with JSON</a></h4>
+                            </div>
+            
+                            <div id="requestData-2df9a0f7-4923-42d5-968c-64666f40557a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-2df9a0f7-4923-42d5-968c-64666f40557a">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">POST</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">177ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">197B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;bookingid&quot;:22,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Sally&quot;,&quot;lastname&quot;:&quot;Brown&quot;,&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2013-02-23&quot;,&quot;checkout&quot;:&quot;2014-10-23&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-da566bdd-9db6-4e98-8d65-d34294a73d07" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-da566bdd-9db6-4e98-8d65-d34294a73d07">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-da566bdd-9db6-4e98-8d65-d34294a73d07" aria-controls="collapseOne">Create a new booking with XML</a></h4>
+                            </div>
+            
+                            <div id="requestData-da566bdd-9db6-4e98-8d65-d34294a73d07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-da566bdd-9db6-4e98-8d65-d34294a73d07">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">POST</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">166ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">452B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">&lt;?xml version&#x3D;&#x27;1.0&#x27;?&gt;
+            &lt;created-booking&gt;
+                &lt;bookingid&gt;23&lt;/bookingid&gt;
+                &lt;booking&gt;
+                    &lt;firstname&gt;Sally&lt;/firstname&gt;
+                    &lt;lastname&gt;Brown&lt;/lastname&gt;
+                    &lt;totalprice&gt;111&lt;/totalprice&gt;
+                    &lt;depositpaid&gt;true&lt;/depositpaid&gt;
+                    &lt;bookingdates&gt;
+                        &lt;checkin&gt;2013-02-23&lt;/checkin&gt;
+                        &lt;checkout&gt;2014-10-23&lt;/checkout&gt;
+                    &lt;/bookingdates&gt;
+                    &lt;additionalneeds&gt;Breakfast&lt;/additionalneeds&gt;
+                &lt;/booking&gt;
+            &lt;/created-booking&gt;</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-ae399bcd-e27b-4746-8742-633c5882094a" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-ae399bcd-e27b-4746-8742-633c5882094a">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-ae399bcd-e27b-4746-8742-633c5882094a" aria-controls="collapseOne">Dynamically create a new booking with JSON</a></h4>
+                            </div>
+            
+                            <div id="requestData-ae399bcd-e27b-4746-8742-633c5882094a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-ae399bcd-e27b-4746-8742-633c5882094a">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">POST</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">164ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">193B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">2</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{&quot;bookingid&quot;:24,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Vilho&quot;,&quot;lastname&quot;:&quot;Linna&quot;,&quot;totalprice&quot;:443,&quot;depositpaid&quot;:false,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2022-01-29&quot;,&quot;checkout&quot;:&quot;2022-01-31&quot;},&quot;additionalneeds&quot;:&quot;None&quot;}}</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">2</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="collapse-request-92c66a6a-7d3f-464f-a3d0-3142e571c3a8" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading tego-bg-green" role="tab" id="requestHead-92c66a6a-7d3f-464f-a3d0-3142e571c3a8">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-92c66a6a-7d3f-464f-a3d0-3142e571c3a8" aria-controls="collapseOne">Dynamically create a new booking with XML</a></h4>
+                            </div>
+            
+                            <div id="requestData-92c66a6a-7d3f-464f-a3d0-3142e571c3a8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-92c66a6a-7d3f-464f-a3d0-3142e571c3a8">
+                                <div class="panel-body">
+            
+                                        <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">POST</span></h4></div>
+                                        <div class="col-md-4">URL</div><div class="col-md-8"><a href="https://restful-booker.herokuapp.com/booking" target="_blank">https://restful-booker.herokuapp.com/booking</a></div>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Mean time per request</div><div class="col-md-8">165ms</div><br/>
+                                    <div class="col-md-4">Mean size per request</div><div class="col-md-8">456B</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">2</div>
+                                    <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+            
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">&lt;?xml version&#x3D;&#x27;1.0&#x27;?&gt;
+            &lt;created-booking&gt;
+                &lt;bookingid&gt;25&lt;/bookingid&gt;
+                &lt;booking&gt;
+                    &lt;firstname&gt;&quot;Richard&quot;&lt;/firstname&gt;
+                    &lt;lastname&gt;&quot;Scott&quot;&lt;/lastname&gt;
+                    &lt;totalprice&gt;746&lt;/totalprice&gt;
+                    &lt;depositpaid&gt;true&lt;/depositpaid&gt;
+                    &lt;bookingdates&gt;
+                        &lt;checkin&gt;2022-01-29&lt;/checkin&gt;
+                        &lt;checkout&gt;2022-02-01&lt;/checkout&gt;
+                    &lt;/bookingdates&gt;
+                    &lt;additionalneeds&gt;&quot;Lunch&quot;&lt;/additionalneeds&gt;
+                &lt;/booking&gt;
+            &lt;/created-booking&gt;</textarea></div><br/>
+                                        <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+            
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-4">Tests</div>
+            
+                                        <div class="col-md-8">
+                                            <table class="table table-responsive table-condensed">
+                                                <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                                <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">2</td><td >0</td></tr></tbody>
+                                            </table>
+                                        </div><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+
